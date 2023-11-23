@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('Coca\ Cola\ Xmas\ Team\ background.png'); 
+    background-image: url('Santa\ Claus\ and\ Rudolf.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,14 +11,35 @@ body {
 }
 
 .landing-page {
-    background-color: rgba(255, 255, 255, 0.9); 
-    width: 80%;
+    position: relative; 
+    background-image: url('Christmas-Presents-Vector-Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
     max-width: 850px;
     margin: 20px auto;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 110px;
+    box-shadow: 0 0 10px rgba(192, 189, 189, 0.1);
+    overflow: hidden; 
 }
+
+.landing-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); 
+    z-index: 1;
+}
+
+.landing-page * {
+    position: relative;
+    z-index: 2;
+}
+
 
 .landing-page h1 {
     background-color: #E41B23; /* Coca Cola Red */
@@ -31,11 +52,11 @@ body {
 .event1, .event2, .event3, .event4, .event5, .event6, .event7 {
     font-family: 'Trebuchet MS';
     font-size: x-large;
-    background-color: #f4f4f4;
+    background-color: #dddddd;
     border-left: 5px solid #E41B23; /* Coca Cola Red */
-    border-right: 5px solid #E41B23; /* Coca Cola Red */ ;
+    border-right: 5px solid #E41B23; /* Coca Cola Red */;
     margin-bottom: 20px;
-    text-align:center;
+    text-align: center;
     padding: 20px;
     border-radius: 5px;
 }
